@@ -1,5 +1,11 @@
 execute pathogen#infect()
 
+"------highlight search 
+set hlsearch
+
+"------column over 81
+"set colorcolumn=81
+
 "filetype plugin indent on
 colorscheme desert
 syntax on
