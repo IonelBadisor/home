@@ -164,4 +164,5 @@ workspace 2 output HDMI2
 #workspace apps assignment
 assign [class="^Firefox$"] 2
 assign [instance="gedit"] 2
-
+assign [instance="spectrophotometer"] 2
+for_window [instance="spectrophotometer"] focus
