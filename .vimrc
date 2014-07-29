@@ -55,6 +55,8 @@ au BufRead,BufNewFile *.inc set filetype=sh
 au BufRead,BufNewFile *.bb set filetype=sh
 au BufRead,BufNewFile *.bbappend set filetype=sh
 au BufRead,BufNewFile *.adoc set syntax=asciidoc
+au BufRead,BufNewFile *.dts set syntax=dts
+au BufRead,BufNewFile *.dtsi set syntax=dts
 
 inoremap <Nul> <C-x><C-o>
 

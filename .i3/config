@@ -121,6 +121,7 @@ bindsym $mod+Shift+r restart
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 bindsym $mod+Ctrl+Shift+H exec i3poweroff
+bindsym $mod+Ctrl+Shift+R exec i3reboot
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -159,7 +160,8 @@ bindsym $mod+F1 exec --no-startup-id xprop_notify
 
 #workspace naming and output
 workspace 1 output HDMI1
-workspace 2 output HDMI2
+#workspace 2 output HDMI2
+workspace 2 output VGA1
 
 #workspace apps assignment
 assign [class="^Firefox$"] 2
