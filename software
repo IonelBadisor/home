@@ -1,0 +1,13 @@
+git:
+	gitk 
+	tig
+
+
+network:
+
+	nmap 
+	iftop
+
+
+serial:
+	picocom
