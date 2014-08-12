@@ -1,7 +1,9 @@
+font Liberation Mono
+
 git:
 	gitk 
 	tig
-
+	
 
 network:
 
