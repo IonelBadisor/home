@@ -1,0 +1,15 @@
+font Liberation Mono
+
+git:
+	gitk 
+	tig
+	git prompt: git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt	
+
+network:
+
+	nmap 
+	iftop
+
+
+serial:
+	picocom
