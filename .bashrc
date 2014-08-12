@@ -1,3 +1,8 @@
+#ls colors
+alias ls='ls --color=auto'
+alias dir='dir --color'
+
+
 #load profile
 source ~/.bash_profile
 
