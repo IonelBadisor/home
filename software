@@ -13,3 +13,9 @@ network:
 
 serial:
 	picocom
+
+doc: 
+
+asciidoc
+xpdf
+qpdfview
