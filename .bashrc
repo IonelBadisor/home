@@ -126,4 +126,5 @@ alias hipwsp="cd ~/Projects/hi5000/workspace/"
 alias tmp="cd ~/tmp"
 
 alias angkern="cd ~/angstrom/build/tmp-angstrom_v2013_12-eglibc/work/beaglebone-angstrom-linux-gnueabi/linux-mainline/3.8.13-r25z/git"
+alias arakern="cd ~/tisdk/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.20-r21a+gitrAUTOINC+ffe21d8739-arago1/git/"
 source .bash_profile

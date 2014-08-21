@@ -14,8 +14,12 @@ network:
 serial:
 	picocom
 
-doc: 
+files: 
+	asciidoc
+	xpdf
+	qpdfview
+	inkscape (has inkview)
 
-asciidoc
-xpdf
-qpdfview
+graph: 
+	grapviz (with nodes and edges)
+	gramps (genealogy)

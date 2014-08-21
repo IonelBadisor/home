@@ -18,18 +18,24 @@ let g:gitgutter_enabled = 1
 let g:gitgutter_signs = 1
 let g:gitgutter_highlight_lines = 1
 
-"------------KEY MAP-------------------
+"==========KEY MAP=========="
 set encoding=utf-8
 map <C-s> :w<cr>
 imap <C-S> <ESC>: w<cr>a
-map <F5> <Esc>:wa<CR>:!make<CR>
-imap <F5> <Esc>:wa<CR>:!make<CR>a
-map <F4> <Esc>:GitGutterToggle<CR>
-imap <F4> <Esc>:GitGutterToggle<CR>a
+"--F*--KEYS--"
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
+map <F3> <Esc>:set wrap!<CR>
+imap <F3> <Esc>:set wrap!<CR>a
+map <F4> <Esc>:GitGutterToggle<CR>
+imap <F4> <Esc>:GitGutterToggle<CR>a
+map <F5> <Esc>:wa<CR>:!make<CR>
+imap <F5> <Esc>:wa<CR>:!make<CR>a
 imap <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S"<CR>A
 map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S"<CR>A
+
+
+
 
 "new line in normal mode
 nmap <S-Enter> O<Esc>
@@ -55,6 +61,7 @@ au BufRead,BufNewFile *.inc set filetype=sh
 au BufRead,BufNewFile *.bb set filetype=sh
 au BufRead,BufNewFile *.bbappend set filetype=sh
 au BufRead,BufNewFile *.adoc set syntax=asciidoc
+au BufRead,BufNewFile *.gv set syntax=dot
 au BufRead,BufNewFile *.dts set syntax=dts
 au BufRead,BufNewFile *.dtsi set syntax=dts
 
