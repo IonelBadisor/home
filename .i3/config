@@ -168,3 +168,7 @@ assign [class="^Firefox$"] 2
 assign [instance="gedit"] 2
 assign [instance="spectrophotometer"] 2
 for_window [instance="spectrophotometer"] focus
+
+exec --no-startup-id i3-msg 'workspace 1; exec i3-sensible-terminal'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 2; exec i3-sensible-terminal -e "vim dev-journal/done-list.adoc +%"'

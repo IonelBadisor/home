@@ -126,5 +126,11 @@ alias hipwsp="cd ~/Projects/hi5000/workspace/"
 alias tmp="cd ~/tmp"
 
 alias angkern="cd ~/angstrom/build/tmp-angstrom_v2013_12-eglibc/work/beaglebone-angstrom-linux-gnueabi/linux-mainline/3.8.13-r25z/git"
-alias arakern="cd ~/tisdk/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.20-r21a+gitrAUTOINC+ffe21d8739-arago1/git/"
+alias arakern-dora="cd ~/tisdk/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.20-r21a+gitrAUTOINC+ffe21d8739-arago1/git/"
+alias arakern-daisy="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.26-r22a+gitrAUTOINC+5c62fd05f1-arago1/git/" 
+alias arakern-daisy-3.14.17="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.14.17-r22d+gitrAUTOINC+0261be2e3a-arago1/git/"
+alias arakern-daisy-3.12.27="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.27-r22a+gitrAUTOINC+26f5c93225-arago1/git/"
+alias arakern-daisy-3.12.26="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.26-r22a+gitrAUTOINC+5c62fd05f1-arago1/git/"
+alias arakern="arakern-daisy-3.12.27"
+
 source .bash_profile

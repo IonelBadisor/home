@@ -31,15 +31,12 @@ map <F4> <Esc>:GitGutterToggle<CR>
 imap <F4> <Esc>:GitGutterToggle<CR>a
 map <F5> <Esc>:wa<CR>:!make<CR>
 imap <F5> <Esc>:wa<CR>:!make<CR>a
-imap <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S"<CR>A
-map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S"<CR>A
+imap <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+imap <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+map <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 
 
-
-
-"new line in normal mode
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
 
 
 set tags=tags;/

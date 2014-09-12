@@ -23,3 +23,9 @@ files:
 graph: 
 	grapviz (with nodes and edges)
 	gramps (genealogy)
+
+virtual disk:
+	kpartx
+
+disk: 
+	udisks
