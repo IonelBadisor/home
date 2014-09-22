@@ -158,6 +158,19 @@ bar {
 #app info
 bindsym $mod+F1 exec --no-startup-id xprop_notify
 
+# screenshot
+# scrot & gimp - root
+# scrot & gimp - select window or rectangle
+#
+
+#bindsym Print exec scrot -e 'mv $f /tmp/ && gimp /tmp/$f'
+#bindsym --release Mod1+Print exec scrot -s -e 'mv $f /tmp/ && gimp /tmp/$f'
+bindsym --release Print exec --no-startup-id `screenshot root`
+bindsym --release Mod1+Print exec --no-startup-id `screenshot active`
+#bindsym --release Print exec --no-startup-id scrot '~/screenshots/%Y-%m-%d-%T-screenshot.png'
+#bindsym --release Mod1+Print exec --no-startup-id scrot -s '~/screenshots/%Y-%m-%d-%T-screenshot.png'
+
+
 #workspace naming and output
 workspace 1 output HDMI1
 #workspace 2 output HDMI2

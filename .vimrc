@@ -36,7 +36,8 @@ map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 imap <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 map <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 
-
+:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+:nnoremap <Leader>S :%s/\<<C-r><C-a>\>/
 
 
 set tags=tags;/
