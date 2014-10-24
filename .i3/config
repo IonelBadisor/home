@@ -184,4 +184,6 @@ for_window [instance="spectrophotometer"] focus
 
 exec --no-startup-id i3-msg 'workspace 1; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/thunderbird'
 exec --no-startup-id i3-msg 'workspace 2; exec i3-sensible-terminal -e "vim dev-journal/done-list.adoc +%"'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/rhythmbox"'

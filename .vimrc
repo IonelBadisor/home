@@ -9,6 +9,8 @@ set hlsearch
 "filetype plugin indent on
 colorscheme desert
 syntax on
+"signify
+let g:signify_vcs_list = [ 'git', 'hg' ]
 
 "nerd tree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif

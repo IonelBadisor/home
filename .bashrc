@@ -119,6 +119,14 @@ stty start undef
 T_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
 
+## bb utility ##
+eval "$(/home/ionel/utilities/bb/bin/bb init -)"
+
+## ascidoctor-fopub ##
+export PATH=${PATH}:/home/ionel/utilities/asciidoctor-fopub
+
+
+
 ## ALIASES ##
 alias hipdoc="cd ~/Projects/hi5000/doc/topics/"
 alias hipdev="cd ~/Projects/hi5000/doc/topics/developer-guide"
