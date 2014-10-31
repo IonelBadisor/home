@@ -99,6 +99,13 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# ~/.bash_profile
+if [ -f ~/.bash_profile ]; then
+    . ~/.bash_profile
+fi
+
+
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -141,4 +148,9 @@ alias arakern-daisy-3.12.27="cd ~/arago/build/arago-tmp-external-linaro-toolchai
 alias arakern-daisy-3.12.26="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.26-r22a+gitrAUTOINC+5c62fd05f1-arago1/git/"
 alias arakern="arakern-daisy-3.12.27"
 
-source .bash_profile
+
+### git alliass ###
+alias gsf="git submodule foreach"
+
+
+
