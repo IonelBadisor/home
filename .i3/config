@@ -152,7 +152,14 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+#	position top
+	colors{
+		background #000000
+		statusline #00A5FF
+		separator #00ff00
+	}
+
+        status_command i3status -c ~/.i3status.conf
 }
 
 #app info
@@ -179,8 +186,8 @@ workspace 2 output VGA1
 #workspace apps assignment
 assign [class="^Firefox$"] 2
 assign [instance="gedit"] 2
-assign [instance="spectrophotometer"] 2
-for_window [instance="spectrophotometer"] focus
+assign [instance="spectro-app"] 2
+for_window [instance="spectro-app"] focus
 
 exec --no-startup-id i3-msg 'workspace 1; exec i3-sensible-terminal'
 exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/firefox'

@@ -69,28 +69,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-# Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
@@ -131,26 +109,6 @@ eval "$(/home/ionel/utilities/bb/bin/bb init -)"
 
 ## ascidoctor-fopub ##
 export PATH=${PATH}:/home/ionel/utilities/asciidoctor-fopub
-
-
-
-## ALIASES ##
-alias hipdoc="cd ~/Projects/hi5000/doc/topics/"
-alias hipdev="cd ~/Projects/hi5000/doc/topics/developer-guide"
-alias hipwsp="cd ~/Projects/hi5000/workspace/"
-alias tmp="cd ~/tmp"
-
-alias angkern="cd ~/angstrom/build/tmp-angstrom_v2013_12-eglibc/work/beaglebone-angstrom-linux-gnueabi/linux-mainline/3.8.13-r25z/git"
-alias arakern-dora="cd ~/tisdk/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.20-r21a+gitrAUTOINC+ffe21d8739-arago1/git/"
-alias arakern-daisy="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.26-r22a+gitrAUTOINC+5c62fd05f1-arago1/git/" 
-alias arakern-daisy-3.14.17="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.14.17-r22d+gitrAUTOINC+0261be2e3a-arago1/git/"
-alias arakern-daisy-3.12.27="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.27-r22a+gitrAUTOINC+26f5c93225-arago1/git/"
-alias arakern-daisy-3.12.26="cd ~/arago/build/arago-tmp-external-linaro-toolchain/work/beaglebone-oe-linux-gnueabi/linux-ti-staging/3.12.26-r22a+gitrAUTOINC+5c62fd05f1-arago1/git/"
-alias arakern="arakern-daisy-3.12.27"
-
-
-### git alliass ###
-alias gsf="git submodule foreach"
 
 
 
