@@ -1,4 +1,3 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
@@ -93,8 +92,8 @@ fi
 
 export PAGER="/usr/bin/most -s"
 
-export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
-export GIT_PS1_SHOWDIRTYSTATE=1
+#export PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\033[01;33m\]$(__git_ps1)\[\033[01;34m\] \$\[\033[00m\] '
+#export GIT_PS1_SHOWDIRTYSTATE=1
 
 
 stty ixany
@@ -105,10 +104,10 @@ T_PROMPT_ONLY_IN_REPO=1
 source ~/.bash-git-prompt/gitprompt.sh
 
 ## bb utility ##
-eval "$(/home/ionel/utilities/bb/bin/bb init -)"
+#eval "$(/home/ionel/utilities/bb/bin/bb init -)"
 
 ## ascidoctor-fopub ##
 export PATH=${PATH}:/home/ionel/utilities/asciidoctor-fopub
 
-
-
+wallch
+set -o vi

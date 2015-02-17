@@ -26,5 +26,5 @@ if [ -d "$HOME/.local/bin" ]; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-#xrandr --output HDMI1 --auto --left-of HDMI2
 xrandr --output HDMI1 --auto --left-of VGA1
+#xrandr --output HDMI1 --auto --right-of VGA1

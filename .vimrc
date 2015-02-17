@@ -24,6 +24,7 @@ let g:gitgutter_highlight_lines = 1
 set encoding=utf-8
 map <C-s> :w<cr>
 imap <C-S> <ESC>: w<cr>a
+vmap <F7> :Tab /\|<CR>
 "--F*--KEYS--"
 map <F2> <Esc>:NERDTreeToggle<CR>
 imap <F2> <Esc>:NERDTreeToggle<CR>
@@ -37,6 +38,8 @@ imap <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 imap <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 map <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+
+map K i<Enter><Esc>
 
 :nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
 :nnoremap <Leader>S :%s/\<<C-r><C-a>\>/
@@ -87,6 +90,11 @@ let g:airline_symbols.linenr = ''
 let repmo_key = ";"
 let repmo_revkey = "," 
 let g:repmo_mapmotions = "j|k h|l <C-E>|<C-Y> zh|zl" 
+
+"tabs
+set ts=4 
+set sw=4
+
 
 "xml format
 function! DoPrettyXML()
