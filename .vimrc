@@ -1,51 +1,86 @@
 execute pathogen#infect()
 
+"line number
+
+:set rnu
+:set nu
+
+"function! NumberToggle()
+"  if(&relativenumber == 1)
+"    set number
+"  else
+"    set relativenumber
+"  endif
+"endfunc
+
+"nnoremap <C-n> :call NumberToggle()<cr>
+
+
+"------copy bethween instances
+set clipboard=unnamedplus
+
 "------highlight search 
-set hlsearch
+"set hlsearch
 
 "------column over 81
 "set colorcolumn=81
 
 "filetype plugin indent on
-colorscheme desert
+"colorscheme BlackSea
+colorscheme blugrine
 syntax on
 "signify
-let g:signify_vcs_list = [ 'git', 'hg' ]
+"let g:signify_vcs_list = [ 'git', 'hg' ]
 
 "nerd tree
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 "gitgutter 
-let g:gitgutter_enabled = 1
-let g:gitgutter_signs = 1
-let g:gitgutter_highlight_lines = 1
+"let g:gitgutter_enabled = 1
+"let g:gitgutter_signs = 1
+"let g:gitgutter_highlight_lines = 1
+
+"=======DISABLE ARROWS keys======"
+
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+
+"noremap h <NOP>
+"noremap j <NOP>
+"noremap k <NOP>
+"noremap l <NOP>
+
+
+
 
 "==========KEY MAP=========="
 set encoding=utf-8
-map <C-s> :w<cr>
-imap <C-S> <ESC>: w<cr>a
-vmap <F7> :Tab /\|<CR>
-"--F*--KEYS--"
-map <F2> <Esc>:NERDTreeToggle<CR>
-imap <F2> <Esc>:NERDTreeToggle<CR>
-map <F3> <Esc>:set wrap!<CR>
-imap <F3> <Esc>:set wrap!<CR>a
-map <F4> <Esc>:GitGutterToggle<CR>
-imap <F4> <Esc>:GitGutterToggle<CR>a
-map <F5> <Esc>:wa<CR>:!make<CR>
-imap <F5> <Esc>:wa<CR>:!make<CR>a
-imap <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
-map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
-imap <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
-map <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+"map <C-s> :w<cr>
+"imap <C-S> <ESC>: w<cr>a
+"vmap <F7> :Tab /\|<CR>
+""--F*--KEYS--"
+"map <F2> <Esc>:NERDTreeToggle<CR>
+"imap <F2> <Esc>:NERDTreeToggle<CR>
+"map <F3> <Esc>:set wrap!<CR>
+"imap <F3> <Esc>:set wrap!<CR>a
+"map <F4> <Esc>:GitGutterToggle<CR>
+"imap <F4> <Esc>:GitGutterToggle<CR>a
+"map <F5> <Esc>:w<CR>:!make<CR>
+"imap <F5> <Esc>:w<CR>:!make<CR>a
+"imap <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+"map <F9> <Esc>:r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+"imap <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
+"map <F10> <Esc>:0r! date "+\%Y-\%m-\%d \%H:\%M:\%S > "<CR>A
 
 map K i<Enter><Esc>
 
-:nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
-:nnoremap <Leader>S :%s/\<<C-r><C-a>\>/
+":nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+":nnoremap <Leader>S :%s/\<<C-r><C-a>\>/
 
 
-set tags=tags;/
+"set tags=tags;/
 
 
 "file type 
@@ -68,28 +103,31 @@ au BufRead,BufNewFile *.gv set syntax=dot
 au BufRead,BufNewFile *.dts set syntax=dts
 au BufRead,BufNewFile *.dtsi set syntax=dts
 
-inoremap <Nul> <C-x><C-o>
+"inoremap <Nul> <C-x><C-o>
 
 "	Airline 
-set guifont=Liberation\ Mono\ for\ Powerline\ 10 
+set t_Co=256
+"set guifont=Liberation\ Mono\ for\ Powerline\ 10 
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'understated'
+let g:airline_theme = 'wombat'
+let g:airline#extensions#tabline#enabled = 1
 
-
+"let g:airline_theme = 'understated'
+set laststatus=2
 "❯❯❯❯❯
-let g:airline_symbols = {}
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
+"let g:airline_symbols = {}
+"let g:airline_left_sep = ''
+"let g:airline_left_alt_sep = ''
+"let g:airline_right_sep = ''
+"let g:airline_right_alt_sep = ''
+"let g:airline_symbols.branch = ''
+"let g:airline_symbols.readonly = ''
+"let g:airline_symbols.linenr = ''
 
 "enable RepmoMap
-let repmo_key = ";"
-let repmo_revkey = "," 
-let g:repmo_mapmotions = "j|k h|l <C-E>|<C-Y> zh|zl" 
+"let repmo_key = ";"
+"let repmo_revkey = "," 
+"let g:repmo_mapmotions = "j|k h|l <C-E>|<C-Y> zh|zl" 
 
 "tabs
 set ts=4 

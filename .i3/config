@@ -157,8 +157,8 @@ bindsym --release Mod1+Print exec --no-startup-id `screenshot active`
 set $w1 1:workspace
 set $w2 2:build
 set $w3 3:testing
-set $w4 4:info-gathering
-set $w5 5:custom
+set $w4 4:doc
+set $w5 5:configs
 set $w6 6:custom
 set $w7 7:schedule
 set $w8 8:journal
