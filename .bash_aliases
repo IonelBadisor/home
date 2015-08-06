@@ -28,4 +28,5 @@ alias tmp="cd ~/tmp"
 alias gsf="git submodule foreach"
 
 
-
+alias sudope="sudo env \"PATH=$PATH\""
+alias qtcreator="qtcreator --stylesheet=${HOME}/tools/qt-creator-wombat-theme/stylesheet.css"
