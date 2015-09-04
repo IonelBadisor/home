@@ -219,6 +219,9 @@ for_window [instance="qmlscene"] focus, floating enable
 assign [instance="front-end-qml"] $w10
 for_window [instance="front-end-qml"] focus, floating enable
 
+assign [instance="test-qml-feature"] $w10
+for_window [instance="test-qml-feature"] focus, floating enable
+
 for_window [class="Inkview" instance="inkview"] focus, floating enable
 for_window [class="Display.im6" instance="display.im6"] focus, floating enable
 
